@@ -80,7 +80,8 @@ public class MainMenuFunctionment : MonoBehaviour
         SceneManager.LoadScene("Nivel 3");
 
     }
-    public void exitGame() 
+    
+    /*public void exitGame() 
     {
         if(UnityEditor.EditorApplication.isPlaying){
             UnityEditor.EditorApplication.isPlaying=false;
@@ -88,7 +89,7 @@ public class MainMenuFunctionment : MonoBehaviour
         else
         Application.Quit();
 
-    }
+    } */
 
    
 }
