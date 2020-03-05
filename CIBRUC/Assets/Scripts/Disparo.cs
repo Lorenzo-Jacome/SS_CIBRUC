@@ -30,9 +30,6 @@ public class Disparo : MonoBehaviour
 
     public  void dispararBala() {
 
-        Debug.Log("Hee hee");
-
-        if (manager.GetComponent<Managing>()) {
 
             permitirDisparo = false;
 
@@ -46,7 +43,7 @@ public class Disparo : MonoBehaviour
 
             permitirDisparo = true;
 
-        }
+        
 
     }
 

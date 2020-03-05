@@ -6,10 +6,10 @@ public class movement : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject greenObject;
+    /*public GameObject greenObject;
     public GameObject redObject;
     public GameObject yellowObject;
-    public GameObject blueObject;
+    public GameObject blueObject; */
 
     void Start()
     {
