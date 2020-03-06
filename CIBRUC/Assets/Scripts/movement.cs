@@ -11,9 +11,13 @@ public class movement : MonoBehaviour
     public GameObject yellowObject;
     public GameObject blueObject; */
 
+    public bool FreezeY = false;
+    private Vector3 originPos;
+
     void Start()
     {
         
+        originPos = transform.position;
     
     }
 
@@ -29,6 +33,13 @@ public class movement : MonoBehaviour
         tempVect = tempVect.normalized * speed * Time.deltaTime;
 
         obj.transform.position += tempVect;
+
+        Vector3 currentPos = transform.position;
+        if (FreezeY)
+        {
+            currentPos.y = originPos.y;
+        }
+        transform.position = currentPos;
 
     }
     
@@ -50,12 +61,18 @@ public class movement : MonoBehaviour
        
         Destroy(col.gameObject);    */
 
-        
 
         if (col.gameObject.tag == "Bullet")
         {
             Destroy(gameObject);
             Destroy(col.gameObject);
         }
-    } 
+
+        if (col.gameObject.tag == "Ally" || col.gameObject.tag == "Enemy")
+        {
+            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
+
+    }
+
 }

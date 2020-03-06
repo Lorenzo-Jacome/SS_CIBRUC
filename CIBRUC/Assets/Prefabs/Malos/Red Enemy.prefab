@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2721666241838623977}
   - component: {fileID: 6036662570106531393}
   - component: {fileID: 1940381256474102362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Red Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -118,11 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d697a3b5ef684f92c97c6a1c9209a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenObject: {fileID: 0}
-  redObject: {fileID: 2721666241838623980}
-  yellowObject: {fileID: 0}
-  blueObject: {fileID: 0}
-  speed: 2
+  speed: 5
   obj: {fileID: 2721666241838623978}
 --- !u!58 &2721666241838623977
 CircleCollider2D:
