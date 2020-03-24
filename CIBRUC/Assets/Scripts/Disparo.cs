@@ -8,17 +8,20 @@ public class Disparo : MonoBehaviour
 
     [SerializeField] public Transform puntaPistola;
     [SerializeField] public GameObject bala;
-    public static bool permitirDisparo = true;
+    [SerializeField] public float rateOfFire = 0.3f;
+    private bool permitirDisparo;
     public GameObject manager;
-    
+    public int sum = 0;
+    private Vector2 direccionBala;
+    private float angulo;
+
 
     void Awake()
     {
+        //The player is allowed to shoot at the start:
+        permitirDisparo = true;
 
     }
-
-    private Vector2 direccionBala;
-    private float angulo;
 
     void Update()
     {
@@ -30,28 +33,33 @@ public class Disparo : MonoBehaviour
 
     public  void dispararBala() {
 
-
+        if (permitirDisparo)
+        {
+            //Block the player from spamming the fire button:
             permitirDisparo = false;
 
+            //Instanciate a new bullet object with the cannon properties:
             GameObject disparar = Instantiate(bala, puntaPistola.position, puntaPistola.rotation);
+
+            //Shoot the bullet with a given velocity:
             disparar.GetComponent<Rigidbody2D>().velocity = puntaPistola.up * 10f;
 
-            Debug.Log("Si entra");
-            Debug.Log(permitirDisparo);
+            //Start a coroutine to wait for the given rate of fire before allowing the player to fire again:
+            StartCoroutine(limitFire());
 
-            StartCoroutine("waitTwoSeconds");
-
-            permitirDisparo = true;
-
-        
+        }
 
     }
 
-    IEnumerator waitTwoSeconds()
+    IEnumerator limitFire()
     {
 
-        yield return new WaitForSeconds(2);
+        //Wait for the given rate of fire:
+        yield return new WaitForSeconds(rateOfFire);
 
+        //Allow player to shoot again:
+        permitirDisparo = true;
+   
     }
 
 }
