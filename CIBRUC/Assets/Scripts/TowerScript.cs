@@ -34,14 +34,16 @@ public class TowerScript : MonoBehaviour
             puntos += 100;
             scoreText.text = puntos.ToString();
         }
-        else if(health >= 0) {
+        else if(health > 0.1) 
+        {
                health -= 0.2f;
                healthBar.SetSize(health);
                Destroy(col.gameObject);
-            }
+        }
 
         if (health <= 0.1)
         {
+            Physics2D.IgnoreLayerCollision(0, 8, true);
             gameOver.gameObject.SetActive(true);
             StartCoroutine(GameOverScreen());
         }

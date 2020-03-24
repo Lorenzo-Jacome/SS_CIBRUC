@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 392182274357873099}
   - component: {fileID: 7818210587254604282}
   - component: {fileID: 4132244278733235521}
-  m_Layer: 0
-  m_Name: Malo3
+  m_Layer: 8
+  m_Name: Bueno3
   m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,11 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d697a3b5ef684f92c97c6a1c9209a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenObject: {fileID: 0}
-  redObject: {fileID: 0}
-  yellowObject: {fileID: 0}
-  blueObject: {fileID: 0}
-  speed: 1
+  speed: 3
   obj: {fileID: 2008412123270875341}
 --- !u!50 &392182274357873099
 Rigidbody2D:

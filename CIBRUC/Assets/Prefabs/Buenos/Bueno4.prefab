@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8951882380394406681}
   - component: {fileID: -2218706391394934990}
   - component: {fileID: -7620788910115591095}
-  m_Layer: 0
-  m_Name: Malo4
+  m_Layer: 8
+  m_Name: Bueno4
   m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,10 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d697a3b5ef684f92c97c6a1c9209a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenObject: {fileID: 0}
-  redObject: {fileID: 0}
-  yellowObject: {fileID: 0}
-  blueObject: {fileID: 0}
   speed: 1
   obj: {fileID: 8308776096255012965}
 --- !u!50 &8951882380394406681
