@@ -9,7 +9,7 @@ public class TowerScript : MonoBehaviour
 
     [SerializeField] public HealthBar healthBar;
     [SerializeField]TextMeshProUGUI scoreText;
-    float health;
+    public float health;
     int puntos;
 
     public GameObject gameOver;
@@ -20,6 +20,8 @@ public class TowerScript : MonoBehaviour
         puntos = 0;
 
         scoreText.text = "0";
+        Time.timeScale=1;
+        Physics2D.IgnoreLayerCollision(0, 8, false);
     }
 
     void Update() {
@@ -45,12 +47,9 @@ public class TowerScript : MonoBehaviour
         {
             Physics2D.IgnoreLayerCollision(0, 8, true);
             gameOver.gameObject.SetActive(true);
-            StartCoroutine(GameOverScreen());
+            Time.timeScale = 0;
+            gameOver.SetActive(true);
         }
     }
-    IEnumerator GameOverScreen() {
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("Menuuuu", LoadSceneMode.Single);
-    }
-    
+
 }
