@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -563,9 +563,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.27525, y: 0.023176225, z: 0}
+    m_Target: {x: 1.66869, y: 0.115545355, z: -0.30227292}
     speed: 2
-    m_Value: {x: 1.27525, y: 0.023176225, z: 0}
+    m_Value: {x: 1.66869, y: 0.115545355, z: -0.30227292}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -598,9 +598,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 13.022601
     speed: 2
-    m_Value: 10
+    m_Value: 13.022601
   m_Ortho:
     m_Target: 1
     speed: 2
