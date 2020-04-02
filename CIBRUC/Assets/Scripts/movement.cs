@@ -18,6 +18,7 @@ public class movement : MonoBehaviour
     {
         
         originPos = transform.position;
+         Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>(),false);
     
     }
 

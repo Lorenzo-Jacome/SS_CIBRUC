@@ -61,7 +61,6 @@ public class PauseMenu : MonoBehaviour
 
     public void RestartGame() //Game is restarted
     {
-        print(current.name);
         SceneManager.LoadScene(current.name);
         Time.timeScale = 1;
     }

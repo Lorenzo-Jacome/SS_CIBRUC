@@ -23,6 +23,10 @@ public class Disparo : MonoBehaviour
 
     }
 
+    void Start(){
+        permitirDisparo=true;
+    }
+
     void Update()
     {
         Touch touch = Input.GetTouch(0);

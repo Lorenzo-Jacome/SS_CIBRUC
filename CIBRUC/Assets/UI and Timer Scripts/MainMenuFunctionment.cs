@@ -37,10 +37,7 @@ public class MainMenuFunctionment : MonoBehaviour
         {
             optionsMenu.SetActive(false);
         }
-        if(Input.GetButtonDown("Back"))
-        {
-            ReturnMainMenu();
-        }
+
     }
 
     public void OpenOptionsSettings() //Options area is opened
