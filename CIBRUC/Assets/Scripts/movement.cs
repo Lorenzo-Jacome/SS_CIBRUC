@@ -69,6 +69,11 @@ public class movement : MonoBehaviour
             Destroy(col.gameObject);
         }
 
+        if (col.gameObject.tag == "CannonBullet")
+        {
+            Destroy(gameObject);
+        }
+
         if (col.gameObject.tag == "Ally" || col.gameObject.tag == "Enemy")
         {
             Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
