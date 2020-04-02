@@ -270,6 +270,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82299987801251805, guid: b1605677ca1512f41a6c262e20bca197,
+        type: 3}
+      propertyPath: m_Name
+      value: Ground Spawner
+      objectReference: {fileID: 0}
     - target: {fileID: 82299987801251802, guid: b1605677ca1512f41a6c262e20bca197,
         type: 3}
       propertyPath: enemy2
@@ -330,11 +335,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82299987801251805, guid: b1605677ca1512f41a6c262e20bca197,
-        type: 3}
-      propertyPath: m_Name
-      value: Ground Spawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1605677ca1512f41a6c262e20bca197, type: 3}
@@ -499,6 +499,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1870454838}
     m_Modifications:
+    - target: {fileID: 4524134203897996348, guid: a88c16902455e1247baf481230188814,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 2332289638537574657, guid: a88c16902455e1247baf481230188814,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -554,11 +559,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4524134203897996348, guid: a88c16902455e1247baf481230188814,
-        type: 3}
-      propertyPath: m_Name
-      value: Bullet
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a88c16902455e1247baf481230188814, type: 3}
 --- !u!1001 &604402108
@@ -568,6 +568,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 309819121674706092, guid: f0c49f67f4f46b449ac4d474dae2e1a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 309819121674706080, guid: f0c49f67f4f46b449ac4d474dae2e1a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -672,11 +677,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 309819121674706092, guid: f0c49f67f4f46b449ac4d474dae2e1a9,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas (1)
       objectReference: {fileID: 0}
     - target: {fileID: 309819122176946372, guid: f0c49f67f4f46b449ac4d474dae2e1a9,
         type: 3}
@@ -2248,6 +2248,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -132.43501
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746847197813322735, guid: a7d48fe99d39bc8469ec4c25e5b90caa,
+        type: 3}
+      propertyPath: currentBullet
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d48fe99d39bc8469ec4c25e5b90caa, type: 3}
