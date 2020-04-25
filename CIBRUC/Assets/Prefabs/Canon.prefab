@@ -125,4 +125,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntaPistola: {fileID: 1746847197520016100}
-  bala: {fileID: 4524134203897996348, guid: a88c16902455e1247baf481230188814, type: 3}
+  balaDefault: {fileID: 4524134203897996348, guid: a88c16902455e1247baf481230188814,
+    type: 3}
+  balaSnipper: {fileID: 4524134203897996348, guid: 7b1ffe89c53e8204cb710157908cc1c2,
+    type: 3}
+  balaCannon: {fileID: 4524134203897996348, guid: dfbebb691e907f947b1679a56b22a529,
+    type: 3}
+  currentBullet: 1
+  rateOfFire: 0.3
+  manager: {fileID: 0}
+  sum: 0
