@@ -30,26 +30,28 @@ public class TowerScript : MonoBehaviour
 
 
     void OnCollisionEnter2D(Collision2D col) {
-        if (col.gameObject.tag == "Ally")
-        {
-            Destroy(col.gameObject);
-            puntos += 100;
-            scoreText.text = puntos.ToString();
-        }
-        else if(health > 0.1) 
-        {
-               health -= 0.2f;
-               healthBar.SetSize(health);
-               Destroy(col.gameObject);
-        }
+        if (col.gameObject.tag != "Bullet" && col.gameObject.tag != "CannonBullet") { 
+            if (col.gameObject.tag == "Ally")
+            {
+                Destroy(col.gameObject);
+                puntos += 100;
+                scoreText.text = puntos.ToString();
+            }
+            else if (health > 0.1)
+            {
+                health -= 0.2f;
+                healthBar.SetSize(health);
+                Destroy(col.gameObject);
+            }
 
-        if (health <= 0.1)
-        {
-            Physics2D.IgnoreLayerCollision(0, 8, true);
-            gameOver.gameObject.SetActive(true);
-            Time.timeScale = 0;
-            gameOver.SetActive(true);
+            if (health <= 0.1)
+            {
+                Physics2D.IgnoreLayerCollision(0, 8, true);
+                gameOver.gameObject.SetActive(true);
+                Time.timeScale = 0;
+                gameOver.SetActive(true);
+            }
         }
     }
-
+    
 }
