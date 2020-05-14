@@ -39,7 +39,7 @@ public class Disparo : MonoBehaviour
         Touch touch = Input.GetTouch(0);
         direccionBala = Camera.main.ScreenToWorldPoint(touch.position) - transform.position;
         angulo = Mathf.Atan2(direccionBala.y, direccionBala.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, angulo - 90f);
+        transform.rotation = Quaternion.Euler(0f, 0f, angulo - 90f + 70f);
     }
 
     public  void dispararBala() {
