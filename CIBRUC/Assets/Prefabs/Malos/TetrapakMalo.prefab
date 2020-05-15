@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FreezeY: 1
+  particles: {fileID: 2047485342110204674, guid: e0116e3126b27224c92bf57f8d771592,
+    type: 3}
   speed: 4
   obj: {fileID: 2465273280029825309}
 --- !u!50 &3071832141558723480

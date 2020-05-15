@@ -9,7 +9,9 @@ public class GameOver : MonoBehaviour
 
     public void ExitGame() //Game is ended and Main Menu appears
     {
+
         SceneManager.LoadScene("Main Menu");
+
     }
 
 }
