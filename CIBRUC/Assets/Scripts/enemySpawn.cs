@@ -10,16 +10,31 @@ public class enemySpawn : MonoBehaviour
     public float rangeFrom;
     public float rangeTo;
     int enemyToSpawn;
+    [SerializeField] public int spawnCounter;
+    [SerializeField] public GameObject winMenu;
 
     // Start is called before the first frame update
     void Start()
     {
+
         StartCoroutine(enemySpawner());
+
+        spawnCounter = numberEnemies;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        int numberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        int numberOfAllies = GameObject.FindGameObjectsWithTag("Ally").Length;
+
+        if (spawnCounter == 0 && numberOfEnemies == 0 && numberOfAllies == 0) {
+
+            winMenu.SetActive(true);
+
+        }
         
     }
 
@@ -43,6 +58,9 @@ public class enemySpawn : MonoBehaviour
             else if (enemyToSpawn == 4) {
                 Instantiate(enemy4, enemyPos.position, enemyPos.rotation);
             }
+
+            spawnCounter--;
+
         }
     }
 }

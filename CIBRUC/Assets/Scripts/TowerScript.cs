@@ -10,7 +10,7 @@ public class TowerScript : MonoBehaviour
     [SerializeField] public HealthBar healthBar;
     [SerializeField]TextMeshProUGUI scoreText;
     public float health;
-    int puntos;
+    public int puntos;
 
     public GameObject gameOver;
 

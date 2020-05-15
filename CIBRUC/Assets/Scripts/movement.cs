@@ -13,6 +13,7 @@ public class movement : MonoBehaviour
 
     public bool FreezeY = false;
     private Vector3 originPos;
+    public GameObject particles;
 
     void Start()
     {
@@ -65,12 +66,14 @@ public class movement : MonoBehaviour
 
         if (col.gameObject.tag == "Bullet")
         {
+            Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(gameObject);
             Destroy(col.gameObject);
         }
 
         if (col.gameObject.tag == "CannonBullet")
         {
+            Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 

@@ -117,6 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d697a3b5ef684f92c97c6a1c9209a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FreezeY: 0
+  particles: {fileID: 2047485342110204674, guid: e0116e3126b27224c92bf57f8d771592,
+    type: 3}
   speed: 4
   obj: {fileID: 1594440175714447253}
 --- !u!60 &1571954156983432038
