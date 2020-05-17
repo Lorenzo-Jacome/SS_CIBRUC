@@ -118,7 +118,7 @@ MonoBehaviour:
   FreezeY: 1
   particles: {fileID: 2047485342110204674, guid: e0116e3126b27224c92bf57f8d771592,
     type: 3}
-  speed: 4
+  speed: 2
   obj: {fileID: 1759253672882742055}
 --- !u!50 &1759253672882742051
 Rigidbody2D:
