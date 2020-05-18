@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1478706868287447944}
   - component: {fileID: 1478706868287447945}
-  - component: {fileID: 1478706868287448054}
   - component: {fileID: 1478706868287448055}
   - component: {fileID: 1478706868287448052}
   - component: {fileID: 1478706868287448053}
-  m_Layer: 0
+  - component: {fileID: 1478706868287448054}
+  m_Layer: 8
   m_Name: HuesoBueno
   m_TagString: Ally
   m_Icon: {fileID: 0}
@@ -84,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1478706868287448054
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478706868287448050}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 75d438fc3a69a714681568454af491f9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1478706868287448055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,3 +391,22 @@ PolygonCollider2D:
       - {x: 0.77, y: -3.4299998}
       - {x: 0.88, y: -3.3}
       - {x: 1, y: -3.1}
+--- !u!95 &1478706868287448054
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478706868287448050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75d438fc3a69a714681568454af491f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

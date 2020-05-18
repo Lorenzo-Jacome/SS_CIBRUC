@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6569588661634727694}
   - component: {fileID: 6569588661634727729}
-  - component: {fileID: 6569588661634727728}
   - component: {fileID: 6569588661634727731}
   - component: {fileID: 6569588661634727730}
   - component: {fileID: 6569588661634727733}
-  m_Layer: 0
+  - component: {fileID: 6569588661634727728}
+  m_Layer: 8
   m_Name: "PapelDeBa\xF1oBueno"
   m_TagString: Ally
   m_Icon: {fileID: 0}
@@ -84,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6569588661634727728
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6569588661634727732}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb4548952990c8c4d9747431bc93f782, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6569588661634727731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +116,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -362,3 +343,22 @@ PolygonCollider2D:
       - {x: -1.37, y: -4.31}
       - {x: -1.04, y: -4.23}
       - {x: -0.81, y: -4.19}
+--- !u!95 &6569588661634727728
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569588661634727732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb4548952990c8c4d9747431bc93f782, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1426079119601473480}
   - component: {fileID: 1426079119601473495}
-  - component: {fileID: 1426079119601473494}
   - component: {fileID: 1426079119601473483}
   - component: {fileID: 1426079119601473482}
   - component: {fileID: 1426079119601473481}
-  m_Layer: 0
+  - component: {fileID: 1426079119601473494}
+  m_Layer: 8
   m_Name: CableBueno
   m_TagString: Ally
   m_Icon: {fileID: 0}
@@ -84,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1426079119601473494
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426079119601473493}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7fa91768006368245827b2fab5c5df3e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1426079119601473483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +116,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -341,3 +322,22 @@ PolygonCollider2D:
       - {x: 1.53, y: -1.76}
       - {x: 1.65, y: -1.6899999}
       - {x: 1.75, y: -1.5799999}
+--- !u!95 &1426079119601473494
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426079119601473493}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fa91768006368245827b2fab5c5df3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

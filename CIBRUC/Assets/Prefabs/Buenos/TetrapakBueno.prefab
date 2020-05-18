@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8251885630644701425}
   - component: {fileID: 8251885630644701426}
-  - component: {fileID: 8251885630644701427}
   - component: {fileID: 8251885630644701428}
   - component: {fileID: 8251885630644701429}
   - component: {fileID: 8251885630644701430}
-  m_Layer: 0
+  - component: {fileID: 8251885630644701427}
+  m_Layer: 8
   m_Name: TetrapakBueno
   m_TagString: Ally
   m_Icon: {fileID: 0}
@@ -84,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8251885630644701427
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8251885630644701431}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f99002d90221400458ffe25530c7ff54, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &8251885630644701428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +116,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -488,3 +469,22 @@ PolygonCollider2D:
       - {x: -4.1330566, y: -8.588379}
       - {x: -3.7946777, y: -8.362793}
       - {x: -3.6496582, y: -8.25}
+--- !u!95 &8251885630644701427
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251885630644701431}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f99002d90221400458ffe25530c7ff54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

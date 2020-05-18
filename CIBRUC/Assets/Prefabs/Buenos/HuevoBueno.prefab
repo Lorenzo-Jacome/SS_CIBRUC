@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2104676230389430607}
   - component: {fileID: 2104676230389430606}
-  - component: {fileID: 2104676230389430593}
   - component: {fileID: 2104676230389430592}
   - component: {fileID: 2104676230389430595}
   - component: {fileID: 2104676230389430594}
-  m_Layer: 0
+  - component: {fileID: 2104676230389430593}
+  m_Layer: 8
   m_Name: HuevoBueno
   m_TagString: Ally
   m_Icon: {fileID: 0}
@@ -84,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2104676230389430593
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104676230389430597}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1bb2844c7700af042abe8eaba933f666, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2104676230389430592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +116,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -269,3 +250,22 @@ PolygonCollider2D:
       - {x: 1.74, y: -1.1999999}
       - {x: 1.8399999, y: -1.05}
       - {x: 1.9399999, y: -0.76}
+--- !u!95 &2104676230389430593
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104676230389430597}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1bb2844c7700af042abe8eaba933f666, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
