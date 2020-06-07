@@ -18,6 +18,7 @@ public class Disparo : MonoBehaviour
     private Vector2 direccionBala;
     private float angulo;
 
+    int counterForDemo = 0;
 
     void Awake()
     {
@@ -27,9 +28,11 @@ public class Disparo : MonoBehaviour
 
     }
 
-    void Start(){
+    void Start()
+    {
 
-        permitirDisparo=true;
+        permitirDisparo = true;
+
         //currentBullet = 0;
 
     }
@@ -40,14 +43,46 @@ public class Disparo : MonoBehaviour
         direccionBala = Camera.main.ScreenToWorldPoint(touch.position) - transform.position;
         angulo = Mathf.Atan2(direccionBala.y, direccionBala.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angulo - 90f + 70f);
+
+
+
+
     }
 
-    public  void dispararBala() {
+    public void dispararBala()
+    {
 
         GameObject currentBulletObject;
         float bulletSpeed;
 
-        switch (currentBullet) {
+        //Delete after demo:
+
+
+        if (counterForDemo < 5)
+        {
+            currentBullet = 0;
+            counterForDemo += 1;
+        }
+        else if (counterForDemo < 10)
+        {
+            currentBullet = 1;
+            counterForDemo += 1;
+        }
+        else if (counterForDemo < 15)
+        {
+            currentBullet = 2;
+            counterForDemo += 1;
+
+
+        }
+        if (counterForDemo == 15)
+        {
+            counterForDemo = 0;
+        }
+        ///////////////////////////////////////////////
+
+        switch (currentBullet)
+        {
 
             case 0:
                 //Default:
@@ -109,7 +144,7 @@ public class Disparo : MonoBehaviour
 
         //Allow player to shoot again:
         permitirDisparo = true;
-   
+
     }
 
 }
