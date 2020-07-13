@@ -55,32 +55,6 @@ public class Disparo : MonoBehaviour
         GameObject currentBulletObject;
         float bulletSpeed;
 
-        //Delete after demo:
-
-
-        if (counterForDemo < 5)
-        {
-            currentBullet = 0;
-            counterForDemo += 1;
-        }
-        else if (counterForDemo < 10)
-        {
-            currentBullet = 1;
-            counterForDemo += 1;
-        }
-        else if (counterForDemo < 15)
-        {
-            currentBullet = 2;
-            counterForDemo += 1;
-
-
-        }
-        if (counterForDemo == 15)
-        {
-            counterForDemo = 0;
-        }
-        ///////////////////////////////////////////////
-
         switch (currentBullet)
         {
 

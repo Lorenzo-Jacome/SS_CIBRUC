@@ -57,6 +57,8 @@
   <ItemGroup>
      <Compile Include="Assets\mainmenu2.cs" />
      <Compile Include="Assets\Managing.cs" />
+     <Compile Include="Assets\PowerUpScript.cs" />
+     <Compile Include="Assets\PUSpawner.cs" />
      <Compile Include="Assets\Scripts\bulletScript.cs" />
      <Compile Include="Assets\Scripts\Disparo.cs" />
      <Compile Include="Assets\Scripts\enemySpawn.cs" />

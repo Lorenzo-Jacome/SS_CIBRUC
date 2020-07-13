@@ -12,6 +12,10 @@ TagManager:
   - Bullet
   - Ally
   - CannonBullet
+  - CanonPu
+  - NormalPu
+  - SniperPu
+  - Canon
   layers:
   - Default
   - TransparentFX
