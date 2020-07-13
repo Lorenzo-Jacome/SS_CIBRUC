@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TowerScript : MonoBehaviour
 {
 
     [SerializeField] public HealthBar healthBar;
     [SerializeField]TextMeshProUGUI scoreText;
+    public Text textWon;
+    public Text textLost;
     public float health;
     public int puntos;
 
     public GameObject gameOver;
+
+    GameObject referenceCamera;
+    CameraScript referenceCameraScript;
 
     void Start()
     {
@@ -22,10 +28,14 @@ public class TowerScript : MonoBehaviour
         scoreText.text = "0";
         Time.timeScale=1;
         Physics2D.IgnoreLayerCollision(0, 8, false);
+
+        referenceCamera = GameObject.FindWithTag("MainCamera");
+        referenceCameraScript = referenceCamera.GetComponent<CameraScript>();
     }
 
     void Update() {
-        
+        textWon.text = puntos.ToString();
+        textLost.text = puntos.ToString();
     }
 
 
@@ -42,6 +52,7 @@ public class TowerScript : MonoBehaviour
                 health -= 0.2f;
                 healthBar.SetSize(health);
                 Destroy(col.gameObject);
+                referenceCameraScript.shakeDuration = 1f;
             }
 
             if (health <= 0.1)

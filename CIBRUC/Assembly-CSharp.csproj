@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraScript.cs" />
      <Compile Include="Assets\mainmenu2.cs" />
      <Compile Include="Assets\Managing.cs" />
      <Compile Include="Assets\PowerUpScript.cs" />
