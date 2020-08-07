@@ -55,16 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraScript.cs" />
-     <Compile Include="Assets\mainmenu2.cs" />
-     <Compile Include="Assets\Managing.cs" />
-     <Compile Include="Assets\PowerUpScript.cs" />
-     <Compile Include="Assets\PUSpawner.cs" />
      <Compile Include="Assets\Scripts\bulletScript.cs" />
+     <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Disparo.cs" />
      <Compile Include="Assets\Scripts\enemySpawn.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\mainmenu2.cs" />
+     <Compile Include="Assets\Scripts\Managing.cs" />
      <Compile Include="Assets\Scripts\movement.cs" />
+     <Compile Include="Assets\Scripts\PowerUpScript.cs" />
+     <Compile Include="Assets\Scripts\PUSpawner.cs" />
      <Compile Include="Assets\Scripts\TowerScript.cs" />
      <Compile Include="Assets\UI and Timer Scripts\GameOver.cs" />
      <Compile Include="Assets\UI and Timer Scripts\MainMenuFunctionment.cs" />
