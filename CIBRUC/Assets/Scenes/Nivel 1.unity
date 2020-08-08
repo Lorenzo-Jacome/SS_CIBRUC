@@ -3228,6 +3228,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 309819122322884930, guid: f0c49f67f4f46b449ac4d474dae2e1a9,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0cd0f65d189058443a56331efd108433,
+        type: 3}
+    - target: {fileID: 309819122322884930, guid: f0c49f67f4f46b449ac4d474dae2e1a9,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 309819122322884930, guid: f0c49f67f4f46b449ac4d474dae2e1a9,
+        type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 0.17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c49f67f4f46b449ac4d474dae2e1a9, type: 3}
 --- !u!1001 &1608484034
@@ -3799,7 +3815,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -30, y: -24}
-  m_SizeDelta: {x: 41.98, y: 39.5}
+  m_SizeDelta: {x: 53, y: 53}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &2082553648 stripped
 MonoBehaviour:
