@@ -1,5 +1,6 @@
 ﻿/*
     Author: Rodrigo Quiroz Reyes
+    Edited by: Lorenzo Jácome Ceniceros
     February 29, 2020
     Description: This scripts controls functionment from the Main Menu and Options/Setting Area of the game
 */
@@ -44,7 +45,7 @@ public class MainMenuFunctionment : MonoBehaviour
     {
         mainMenuButtons.SetActive(false);
         optionsMenu.SetActive(true);
-        controlsApperance = true;
+        controlsApperance = true; 
     }
 
 
