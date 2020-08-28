@@ -1,20 +1,45 @@
-# Ignore Everything
-/*
-
-# Except for these:
-!/.gitignore
-!/Assets
-!/ProjectSettings
-*.csproj
-*.csproj
-*.csproj
-*.graph
-CIBRUC/Library/assetDatabase3
-*.dwlt
-*.dwlt
-CIBRUC/Library/metadata/12/128e987d567d4e2c824d754223b3f3b0
-CIBRUC/Library/metadata/1a/1acbd68593e8ef545b7ae361bde441f1
-*.info
-CIBRUC/Library/metadata/1e/1e3b057af24249748ff873be7fafee47
-CIBRUC/Library/ShaderCache/EditorEncounteredVariants
-*.dll
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Bb]uild
+/[Bb]uilds/
+/[Ll]ibrary/
+sysinfo.txt
+*.stackdump
+/Assets/AssetStoreTools*
+*.apk
+*.unitypackage
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.pidb
+*.pidb.meta
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+.consulo/
+/*.tmp
+/*.svd
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+Corridor/Library/ShaderCache/
+Corridor/Library/metadata/
