@@ -5,3 +5,16 @@
 !/.gitignore
 !/Assets
 !/ProjectSettings
+*.csproj
+*.csproj
+*.csproj
+*.graph
+CIBRUC/Library/assetDatabase3
+*.dwlt
+*.dwlt
+CIBRUC/Library/metadata/12/128e987d567d4e2c824d754223b3f3b0
+CIBRUC/Library/metadata/1a/1acbd68593e8ef545b7ae361bde441f1
+*.info
+CIBRUC/Library/metadata/1e/1e3b057af24249748ff873be7fafee47
+CIBRUC/Library/ShaderCache/EditorEncounteredVariants
+*.dll
