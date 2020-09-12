@@ -17,6 +17,8 @@ public class MainMenuFunctionment : MonoBehaviour
     public GameObject mainMenuButtons;
     public GameObject mainMenuPanel;
 
+    public GameObject settings;
+
     public GameObject nivelesMenu;
 
     
@@ -48,11 +50,18 @@ public class MainMenuFunctionment : MonoBehaviour
         controlsApperance = true; 
     }
 
+    public void OpenSettings(){
+        mainMenuButtons.SetActive(false);
+        settings.SetActive(true);
+
+    }
+
 
     public void ReturnMainMenu() //Players return to Main Menu
     {
         nivelesMenu.SetActive(false);
         optionsMenu.SetActive(false);
+        settings.SetActive(false);
         mainMenuButtons.SetActive(true);
         controlsApperance = false;
     }
