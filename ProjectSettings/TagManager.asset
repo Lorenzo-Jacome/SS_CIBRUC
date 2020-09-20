@@ -16,6 +16,7 @@ TagManager:
   - NormalPu
   - SniperPu
   - Canon
+  - GValues
   layers:
   - Default
   - TransparentFX
