@@ -860,6 +860,94 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1271576095}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 881524791}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1886869262}
+        m_MethodName: resizeClickedButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: reduce
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1875240700}
+        m_MethodName: resizeClickedButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: reduce
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 768590608}
+        m_MethodName: resizeClickedButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: reduce
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1451324047}
+        m_MethodName: showPanel
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 474857714}
+        m_MethodName: showPanel
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1009498235}
+        m_MethodName: showPanel
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &194228267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1226,7 +1314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -404, y: -188}
+  m_AnchoredPosition: {x: -418, y: -220.16}
   m_SizeDelta: {x: 130, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &241496030
@@ -2888,6 +2976,7 @@ GameObject:
   - component: {fileID: 768590606}
   - component: {fileID: 768590605}
   - component: {fileID: 768590608}
+  - component: {fileID: 768590609}
   m_Layer: 5
   m_Name: ButtonGrey
   m_TagString: Untagged
@@ -2957,17 +3046,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1271576095}
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "Inorg\xE1nica No Reciclable"
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1271576097}
         m_MethodName: SetTitle
         m_Mode: 5
@@ -2977,18 +3055,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: grey
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 881524791}
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "El bote gris es para la basura inorg\xE1nica que no se
-            puede reciclar, como lo son:"
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 768590608}
@@ -3057,6 +3123,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 768590609}
+        m_MethodName: displayTutorialText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &768590606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3106,6 +3183,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 768590605}
+--- !u!114 &768590609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768590603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df057d5db7cbae40bf64dc6bba3d000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleObject: {fileID: 1271576095}
+  descriptionObject: {fileID: 881524791}
+  titleSpanish: "Inorg\xE1nica No Reciclable:"
+  titleEnglish: 'Inorganic Non Recyclable:'
+  descriptionSpanish: "El bote gris es para la basura inorg\xE1nica que no se puede
+    reciclar, como lo son:"
+  descriptionEnglish: 'The gray trashcan is for inorganic waste that cannot be recycled,
+    such as:'
 --- !u!1 &778237267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,7 +4782,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.8, y: -72}
+  m_AnchoredPosition: {x: 27.8, y: -280}
   m_SizeDelta: {x: 197.18, y: 76.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315355873
@@ -5730,6 +5827,7 @@ GameObject:
   - component: {fileID: 1875240698}
   - component: {fileID: 1875240697}
   - component: {fileID: 1875240700}
+  - component: {fileID: 1875240701}
   m_Layer: 5
   m_Name: ButtonRed
   m_TagString: Untagged
@@ -5799,17 +5897,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1271576095}
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "Inorg\xE1nica Reciclable"
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1271576097}
         m_MethodName: SetTitle
         m_Mode: 5
@@ -5819,18 +5906,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: red
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 881524791}
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "El bote rojo es para los desechos inorg\xE1nicos que
-            se pueden reciclar, como lo son:"
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1875240700}
@@ -5899,6 +5974,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1875240701}
+        m_MethodName: displayTutorialText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1875240698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5948,6 +6034,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 1875240697}
+--- !u!114 &1875240701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875240695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df057d5db7cbae40bf64dc6bba3d000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleObject: {fileID: 1271576095}
+  descriptionObject: {fileID: 881524791}
+  titleSpanish: "Inorg\xE1nica Reciclable:"
+  titleEnglish: 'Inorganic Recyclable:'
+  descriptionSpanish: "El bote rojo es para los desechos inorg\xE1nicos que se pueden
+    reciclar, como lo son:"
+  descriptionEnglish: 'The red trashcan is for inorganic waste that can be recycled,
+    such as:'
 --- !u!1 &1886869257
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,6 +6067,7 @@ GameObject:
   - component: {fileID: 1886869260}
   - component: {fileID: 1886869259}
   - component: {fileID: 1886869262}
+  - component: {fileID: 1886869263}
   m_Layer: 5
   m_Name: ButtonGreen
   m_TagString: Untagged
@@ -6030,17 +6137,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1271576095}
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "Org\xE1nica"
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1271576097}
         m_MethodName: SetTitle
         m_Mode: 5
@@ -6050,18 +6146,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Green
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 881524791}
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "El bote verde es para la basura org\xE1nica, como lo
-            son:"
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1886869262}
@@ -6130,6 +6214,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1886869263}
+        m_MethodName: displayTutorialText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1886869260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6179,6 +6274,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 1886869259}
+--- !u!114 &1886869263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886869257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df057d5db7cbae40bf64dc6bba3d000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleObject: {fileID: 1271576095}
+  descriptionObject: {fileID: 881524791}
+  titleSpanish: "Org\xE1nica:"
+  titleEnglish: 'Organic:'
+  descriptionSpanish: "El bote verde es para la basura org\xE1nica, como lo son:"
+  descriptionEnglish: 'The green trashcan is for organic waste, such as:'
 --- !u!1 &1887926155
 GameObject:
   m_ObjectHideFlags: 0
