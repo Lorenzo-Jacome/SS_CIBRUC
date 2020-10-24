@@ -14,6 +14,7 @@ public class MainMenuFunctionment : MonoBehaviour
 {
     //Definition of Main Menu Components and settingss area components 
     public GameObject optionsMenu;
+
     public GameObject mainMenuButtons;
     public GameObject mainMenuPanel;
 
@@ -47,7 +48,6 @@ public class MainMenuFunctionment : MonoBehaviour
         optionsMenu.SetActive(true);
         controlsApperance = true; 
     }
-
 
     public void ReturnMainMenu() //Players return to Main Menu
     {
