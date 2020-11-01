@@ -1,6 +1,6 @@
 ﻿/*
     Author: Rodrigo Quiroz Reyes
-    Edited by: Lorenzo Jácome Ceniceros
+    Edited by: Lorenzo Jácome Ceniceros and Mr. Spikes
     February 29, 2020
     Description: This scripts controls functionment from the Main Menu and Options/Setting Area of the game
 */
@@ -19,6 +19,7 @@ public class MainMenuFunctionment : MonoBehaviour
     public GameObject mainMenuPanel;
 
     public GameObject nivelesMenu;
+    public GameObject settingsMenu;
 
     
     //Boolean variable for controls' pannel apperance
@@ -42,10 +43,11 @@ public class MainMenuFunctionment : MonoBehaviour
 
     }
 
-    public void OpenOptionsSettings() //Options area is opened
+    public void OpenOptionsSettings() //Tutorial area is opened
     {
         mainMenuButtons.SetActive(false);
-        optionsMenu.SetActive(true);
+        optionsMenu.SetActive(true); //Tutorial
+        settingsMenu.SetActive(false);
         controlsApperance = true; 
     }
 
@@ -53,9 +55,20 @@ public class MainMenuFunctionment : MonoBehaviour
     {
         nivelesMenu.SetActive(false);
         optionsMenu.SetActive(false);
+        settingsMenu.SetActive(false);
         mainMenuButtons.SetActive(true);
         controlsApperance = false;
     }
+
+    public void OpenSettings() //Settings area is open.
+    {
+        nivelesMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+        mainMenuButtons.SetActive(false);
+        controlsApperance = true;
+    }
+
     public void jugar() 
     {
         nivelesMenu.SetActive(true);

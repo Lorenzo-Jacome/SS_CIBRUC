@@ -201,8 +201,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 431169359}
-        m_MethodName: 
+      - m_Target: {fileID: 112071950}
+        m_MethodName: OpenSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -412,6 +412,7 @@ MonoBehaviour:
   mainMenuButtons: {fileID: 387770569}
   mainMenuPanel: {fileID: 112071945}
   nivelesMenu: {fileID: 2143952488}
+  settingsMenu: {fileID: 1480144962}
   controlsApperance: 1
 --- !u!1 &114325100
 GameObject:
@@ -1538,7 +1539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &297584227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2454,7 +2455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &633054210
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4613,7 +4614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1295777889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6460,7 +6461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1926601374
 RectTransform:
   m_ObjectHideFlags: 0
