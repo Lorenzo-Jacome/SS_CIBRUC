@@ -18,6 +18,8 @@ public class Disparo : MonoBehaviour
     private Vector2 direccionBala;
     private float angulo;
 
+    AudioSource source;
+
     int counterForDemo = 0;
 
     void Awake()
@@ -63,7 +65,9 @@ public class Disparo : MonoBehaviour
                 currentBulletObject = balaDefault;
                 bulletSpeed = 10f;
                 rateOfFire = 0.3f;
-                Debug.Log("Entra 0");
+                source = currentBulletObject.GetComponent<AudioSource>();
+                //GetComponent<AudioSource>().clip = source.clip;
+                Debug.Log("Entra 0"+source.clip);
                 break;
 
             case 1:
@@ -71,6 +75,7 @@ public class Disparo : MonoBehaviour
                 currentBulletObject = balaSnipper;
                 bulletSpeed = 20f;
                 rateOfFire = 0.6f;
+                source = currentBulletObject.GetComponent<AudioSource>();
                 Debug.Log("Entra 1");
                 break;
 
@@ -79,6 +84,7 @@ public class Disparo : MonoBehaviour
                 currentBulletObject = balaCannon;
                 bulletSpeed = 5f;
                 rateOfFire = 1.0f;
+                source = currentBulletObject.GetComponent<AudioSource>();
                 Debug.Log("Entra 2");
                 break;
 
@@ -102,6 +108,10 @@ public class Disparo : MonoBehaviour
 
             //Shoot the bullet with a given velocity:
             disparar.GetComponent<Rigidbody2D>().velocity = puntaPistola.up * bulletSpeed;
+
+            // SEBAS - Una vez disparado utilizar el sonido
+
+            //
 
             //Start a coroutine to wait for the given rate of fire before allowing the player to fire again:
             StartCoroutine(limitFire());
