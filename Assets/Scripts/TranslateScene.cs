@@ -24,7 +24,7 @@ public class TranslateScene : MonoBehaviour
     public Text gameOverScore;
 
     //Game Won:
-    public Text gameWonHeader;
+    public Text gameWonHeather;
     public Text gameWonScore;
     public Text gameWonExit;
 
@@ -63,7 +63,7 @@ public class TranslateScene : MonoBehaviour
             gameOverScore.text = "Score: ";
 
             //Game Won:
-            gameWonHeader.text = "YOU WON!";
+            gameWonHeather.text = "YOU WON!";
             gameWonScore.text = "Score: ";
             gameWonExit.text = "Return to main menu";
 
@@ -86,7 +86,7 @@ public class TranslateScene : MonoBehaviour
             gameOverScore.text = "Puntuación: ";
 
             //Game Won:
-            gameWonHeader.text = "GANASTE!";
+            gameWonHeather.text = "GANASTE!";
             gameWonScore.text = "Puntuación: ";
             gameWonExit.text = "Regresar al menú principal";
 

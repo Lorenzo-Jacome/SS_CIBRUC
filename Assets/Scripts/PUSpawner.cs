@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PUSpawner : MonoBehaviour
 {
-    public GameObject pu1, pu2, pu3;
+    public GameObject pu1, pu2, pu3, pu4;
     public Transform spawnPos;
     public float rangeFrom;
     public float rangeTo;
@@ -25,7 +25,7 @@ public class PUSpawner : MonoBehaviour
     IEnumerator powerUpSpawner() {
         for (int i = 0; i <= 10; i++) { 
             yield return new WaitForSeconds(Random.Range(rangeFrom, rangeTo));
-            puToSpawn = Random.Range(1, 4);
+            puToSpawn = Random.Range(1, 5);
 
             if (puToSpawn == 1) {
                 Instantiate(pu1, spawnPos.position, spawnPos.rotation);
@@ -33,6 +33,9 @@ public class PUSpawner : MonoBehaviour
                 Instantiate(pu2, spawnPos.position, spawnPos.rotation);
             } else if (puToSpawn == 3) {
                 Instantiate(pu3, spawnPos.position, spawnPos.rotation);
+            } else if (puToSpawn == 4)
+            {
+                Instantiate(pu4, spawnPos.position, spawnPos.rotation);
             }
         }
     }

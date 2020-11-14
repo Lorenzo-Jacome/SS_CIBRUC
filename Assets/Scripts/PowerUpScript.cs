@@ -46,5 +46,12 @@ public class PowerUpScript : MonoBehaviour
             Destroy(gameObject);
             Destroy(col.gameObject);
         }
+        //El verdadero
+        else if (gameObject.tag == "CibrucPu")
+        {
+            TowerScript.puntos += 500;
+            Destroy(gameObject);
+            Destroy(col.gameObject);
+        }
     }
 }
