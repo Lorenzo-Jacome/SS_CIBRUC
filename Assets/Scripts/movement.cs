@@ -14,7 +14,8 @@ public class movement : MonoBehaviour
     public bool FreezeY = false;
     private Vector3 originPos;
     public GameObject particles;
-
+    public AudioClip deathSound;
+    public AudioSource audioSource;
     void Start()
     {
         
@@ -28,6 +29,7 @@ public class movement : MonoBehaviour
 
     public void Update()
     {
+ 
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
@@ -44,7 +46,15 @@ public class movement : MonoBehaviour
         transform.position = currentPos;
 
     }
-    
+        IEnumerator DieTime()
+    {
+            
+            audioSource.clip=deathSound;
+            audioSource.PlayOneShot(deathSound);
+        
+            yield return new WaitForSeconds(4);
+
+    }
     void OnCollisionEnter2D(Collision2D col)
     {
 
@@ -66,6 +76,7 @@ public class movement : MonoBehaviour
 
         if (col.gameObject.tag == "Bullet")
         {
+            StartCoroutine(DieTime());
             Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(gameObject);
             Destroy(col.gameObject);
@@ -73,15 +84,21 @@ public class movement : MonoBehaviour
 
         if (col.gameObject.tag == "CannonBullet")
         {
+            StartCoroutine(DieTime());
             Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            
         }
 
         if (col.gameObject.tag == "Ally" || col.gameObject.tag == "Enemy")
         {
+            StartCoroutine(DieTime());
             Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            
         }
 
     }
+
+
 
 }

@@ -3,7 +3,16 @@ guid: 2d401304615503c499bed3050b87a28e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - puntaPistola: {instanceID: 0}
+  - balaDefault: {instanceID: 0}
+  - normal: {fileID: 8300000, guid: 3944293ca6b30b04a9f1b4777898d574, type: 3}
+  - balaSnipper: {instanceID: 0}
+  - snipper: {fileID: 8300000, guid: 4a99d376f8d7f3745af6053d14022779, type: 3}
+  - balaCannon: {instanceID: 0}
+  - cannon: {fileID: 8300000, guid: 61f3b855a00112e478c31de03e73851d, type: 3}
+  - audioSource: {instanceID: 0}
+  - manager: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

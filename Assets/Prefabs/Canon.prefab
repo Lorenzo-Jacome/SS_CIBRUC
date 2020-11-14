@@ -127,11 +127,15 @@ MonoBehaviour:
   puntaPistola: {fileID: 1746847197520016100}
   balaDefault: {fileID: 4524134203897996348, guid: a88c16902455e1247baf481230188814,
     type: 3}
+  normal: {fileID: 8300000, guid: 3944293ca6b30b04a9f1b4777898d574, type: 3}
   balaSnipper: {fileID: 4524134203897996348, guid: 7b1ffe89c53e8204cb710157908cc1c2,
     type: 3}
+  snipper: {fileID: 8300000, guid: 4a99d376f8d7f3745af6053d14022779, type: 3}
   balaCannon: {fileID: 4524134203897996348, guid: dfbebb691e907f947b1679a56b22a529,
     type: 3}
+  cannon: {fileID: 8300000, guid: 61f3b855a00112e478c31de03e73851d, type: 3}
   currentBullet: 1
+  audioSource: {fileID: 0}
   rateOfFire: 0.3
   manager: {fileID: 0}
   sum: 0

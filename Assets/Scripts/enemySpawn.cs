@@ -15,8 +15,6 @@ public class enemySpawn : MonoBehaviour
     [SerializeField] public int spawnCounter;
     [SerializeField] public GameObject winMenu;
 
-    public AudioClip[] sounds;
-    public AudioSource source;
 
     // Start is called before the first frame update
     void Start()
@@ -105,11 +103,6 @@ public class enemySpawn : MonoBehaviour
                 Instantiate(enemy13, enemyPos.position, enemyPos.rotation);
             }
 
-            //Sonido
-            source = gameObject.GetComponent<AudioSource>();
-            source.clip = sounds[Random.Range(0,sounds.Length)];
-            source.Play();
-            Debug.Log(source.clip);
             spawnCounter--;
 
         }
