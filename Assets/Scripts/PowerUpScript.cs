@@ -10,6 +10,7 @@ public class PowerUpScript : MonoBehaviour
 
     GameObject referenceObject;
     Disparo referenceScript;
+    public AudioSource powerupSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,24 +28,29 @@ public class PowerUpScript : MonoBehaviour
         transform.position = new Vector3(position.x, moving, position.z) * height;
         transform.Translate(-Vector3.right * disp * Time.deltaTime);
     }
+    IEnumerator PowerUpDelete(Collision2D col, int bullet)
+    {
+        powerupSound.Play();
+        gameObject.GetComponent<SpriteRenderer>().enabled=false;
+        Destroy(col.gameObject);
+        referenceScript.currentBullet = bullet;
+        yield return new WaitForSeconds(0.7f);   
+        Destroy(gameObject);
+       
+    }
 
     void OnCollisionEnter2D(Collision2D col) {
         if (gameObject.tag == "NormalPu")
         {
-            referenceScript.currentBullet = 0;
-            Destroy(gameObject);
-            Destroy(col.gameObject);
+            StartCoroutine(PowerUpDelete(col,0));
         }
-        else if (gameObject.tag == "SniperPu") {
-            referenceScript.currentBullet = 1;
-            Destroy(gameObject);
-            Destroy(col.gameObject);
+        else if (gameObject.tag == "SniperPu") 
+        {
+            StartCoroutine(PowerUpDelete(col,1));
         }
         else if (gameObject.tag == "CanonPu")
         {
-            referenceScript.currentBullet = 2;
-            Destroy(gameObject);
-            Destroy(col.gameObject);
+            StartCoroutine(PowerUpDelete(col,2));
         }
     }
 }

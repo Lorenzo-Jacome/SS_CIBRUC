@@ -14,7 +14,7 @@ public class Sound_Zombies_Idle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!audioSource.isPlaying)
+    if (!audioSource.isPlaying)
     {
       soundLoop();
     }

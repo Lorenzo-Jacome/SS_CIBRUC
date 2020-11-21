@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 3102595952660543358}
   - component: {fileID: 3102595952660543359}
   - component: {fileID: 3102595952660543344}
+  - component: {fileID: -3634109663998859095}
   m_Layer: 0
-  m_Name: BoteNegro 4
+  m_Name: BoteRojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +97,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   scoreText: {fileID: 0}
+  textWon: {fileID: 0}
+  textLost: {fileID: 0}
+  health: 0
+  puntos: 0
   gameOver: {fileID: 0}
+  audioSource: {fileID: -3634109663998859095}
+  coin: {fileID: 8300000, guid: 52806891784e00a4a982a6bb83ec807f, type: 3}
+  boom: {fileID: 8300000, guid: 7a4aaa1de6886fe49ab1f1b80d7ec1dc, type: 3}
+  gameOverSound: {fileID: 8300000, guid: b5a43560a893aab4699cd40862a1a1e7, type: 3}
+  audioMixer: {fileID: 24100000, guid: 0b2e48f22d19bfc40b0bded8a752f349, type: 2}
 --- !u!68 &3102595952660543344
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +134,100 @@ EdgeCollider2D:
   - {x: -0.38772672, y: 4.6077724}
   - {x: 0.21050724, y: 3.9377244}
   - {x: 2.082269, y: 3.4934733}
+--- !u!82 &-3634109663998859095
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102595952660543345}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7398296244824904889, guid: 0b2e48f22d19bfc40b0bded8a752f349,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class TowerScript : MonoBehaviour
 {
@@ -19,11 +20,17 @@ public class TowerScript : MonoBehaviour
 
     GameObject referenceCamera;
     CameraScript referenceCameraScript;
+    public AudioSource audioSource;
+    public AudioClip coin;
+    public AudioClip boom;
+    public AudioClip gameOverSound;
 
-    void Start()
+    public AudioMixer audioMixer;
+        void Start()
     {
         health = 1f;
         puntos = 0;
+
 
         scoreText.text = "0";
         Time.timeScale=1;
@@ -46,6 +53,7 @@ public class TowerScript : MonoBehaviour
                 Destroy(col.gameObject);
                 puntos += 100;
                 scoreText.text = puntos.ToString();
+                audioSource.PlayOneShot(coin);
             }
             else if (health > 0.1)
             {
@@ -53,6 +61,7 @@ public class TowerScript : MonoBehaviour
                 healthBar.SetSize(health);
                 Destroy(col.gameObject);
                 referenceCameraScript.shakeDuration = 1f;
+                audioSource.PlayOneShot(boom);
             }
 
             if (health <= 0.1)
@@ -60,7 +69,11 @@ public class TowerScript : MonoBehaviour
                 Physics2D.IgnoreLayerCollision(0, 8, true);
                 gameOver.gameObject.SetActive(true);
                 Time.timeScale = 0;
+                audioSource.PlayOneShot(gameOverSound);
                 gameOver.SetActive(true);
+                audioMixer.SetFloat("Music_Param",0f);
+                audioMixer.SetFloat("Env_Param",0f);
+                //AudioListener.volume=0f;
             }
         }
     }

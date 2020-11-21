@@ -46,13 +46,18 @@ public class movement : MonoBehaviour
         transform.position = currentPos;
 
     }
-        IEnumerator DieTime()
+    IEnumerator DieTime(Collision2D col)
     {
+        gameObject.GetComponent<Collider2D>().enabled=false;
+        gameObject.GetComponent<SpriteRenderer>().enabled=false;
+        Instantiate(particles, transform.position, Quaternion.identity);
+        Destroy(col.gameObject);
+        audioSource.clip=deathSound;
+        audioSource.PlayOneShot(deathSound);
+        //audioSource.enabled=false;
+        yield return new WaitForSeconds(1);         
+        Destroy(gameObject);
             
-            audioSource.clip=deathSound;
-            audioSource.PlayOneShot(deathSound);
-        
-            yield return new WaitForSeconds(4);
 
     }
     void OnCollisionEnter2D(Collision2D col)
@@ -76,23 +81,22 @@ public class movement : MonoBehaviour
 
         if (col.gameObject.tag == "Bullet")
         {
-            StartCoroutine(DieTime());
-            Instantiate(particles, transform.position, Quaternion.identity);
-            Destroy(gameObject);
-            Destroy(col.gameObject);
+            StartCoroutine(DieTime(col));
+
+            //Destroy(col.gameObject);
         }
 
         if (col.gameObject.tag == "CannonBullet")
         {
-            StartCoroutine(DieTime());
-            Instantiate(particles, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            StartCoroutine(DieTime(col));
+           // Instantiate(particles, transform.position, Quaternion.identity);
+            //Destroy(gameObject);
             
         }
 
         if (col.gameObject.tag == "Ally" || col.gameObject.tag == "Enemy")
         {
-            StartCoroutine(DieTime());
+            //StartCoroutine(DieTime(col));
             Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             
         }
