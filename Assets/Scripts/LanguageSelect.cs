@@ -17,6 +17,8 @@ public class LanguageSelect : MonoBehaviour
     public Sprite eng_tutorial;
     public Sprite esp_tutorial;
 
+    public Text tutorial_title;
+
     public Button options;
     public Sprite eng_options;
     public Sprite esp_options;
@@ -106,6 +108,8 @@ public class LanguageSelect : MonoBehaviour
             Image creditsBackImage = credits_back.GetComponent<Image>();
             creditsBackImage.sprite = credits_back_esp;
 
+            tutorial_title.text = "Presiona un bote para aprender más:";
+
         }
         else {
 
@@ -144,6 +148,8 @@ public class LanguageSelect : MonoBehaviour
 
             Image creditsBackImage = credits_back.GetComponent<Image>();
             creditsBackImage.sprite = credits_back_eng;
+
+            tutorial_title.text = "Select a trash can to learn more:";
 
         }
 
