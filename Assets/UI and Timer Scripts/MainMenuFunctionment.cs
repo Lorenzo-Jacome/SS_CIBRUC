@@ -20,6 +20,7 @@ public class MainMenuFunctionment : MonoBehaviour
 
     public GameObject nivelesMenu;
     public GameObject settingsMenu;
+    public GameObject credits;
 
     
     //Boolean variable for controls' pannel apperance
@@ -57,6 +58,7 @@ public class MainMenuFunctionment : MonoBehaviour
         optionsMenu.SetActive(false);
         settingsMenu.SetActive(false);
         mainMenuButtons.SetActive(true);
+        credits.SetActive(false);
         controlsApperance = false;
     }
 
@@ -66,7 +68,19 @@ public class MainMenuFunctionment : MonoBehaviour
         optionsMenu.SetActive(false);
         settingsMenu.SetActive(true);
         mainMenuButtons.SetActive(false);
+        credits.SetActive(false);
         controlsApperance = true;
+    }
+
+    public void OpenCredits() {
+
+        credits.SetActive(true);
+        nivelesMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        settingsMenu.SetActive(false);
+        mainMenuButtons.SetActive(false);
+        controlsApperance = true;
+
     }
 
     public void jugar() 
